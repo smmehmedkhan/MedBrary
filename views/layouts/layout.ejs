@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MedBrary</title>
-</head>
-<body>
-  Before
-  <br>
-  <%- body %>
-  <br>
-  After
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0" />
+		<title>MedBrary</title>
+	</head>
+	<body>
+		<%- include('../partials/navbar') %>
+		<br />
+		<%- body %>
+		<br />
+		<%- include('../partials/messages') %>
+	</body>
 </html>
