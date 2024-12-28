@@ -8,10 +8,10 @@ const router = express.Router(); // Init express router
 
 // All authors route
 router.get('/', (req, res) => {
-  let searchOptions = {}
-  if (req.query.name != null && req.query.name != '') {
-    searchOptions.name = new RegExp(req.query.name, 'i')
-  }
+	let searchOptions = {};
+	if (req.query.name != null && req.query.name != '') {
+		searchOptions.name = new RegExp(req.query.name, 'i');
+	}
 	try {
 		const author = new Author.find({});
 		res.render('authors/index', { author });
